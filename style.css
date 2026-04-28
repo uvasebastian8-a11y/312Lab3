@@ -1,0 +1,28 @@
+/* 1. Custom Theme Colors & Fonts */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+/* 2. Custom Jumbotron/Hero Styling */
+.bg-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3) !important;
+    border-bottom: 5px solid #ffc107; /* Adding a gold accent line */
+}
+
+/* 3. Custom Card & Hover Effects */
+.card, .border {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .border:hover {
+    transform: translateY(-10px); /* Lifts the card up when hovered */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #007bff !important;
+}
+
+/* Custom Footer or Navigation tweaks */
+.navbar-brand {
+    letter-spacing: 2px;
+    color: #ffc107 !important; /* Makes the logo gold */
+}

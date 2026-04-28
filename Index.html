@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Future Tech - Home</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="index.html">Future Tech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-uppercase">
+            <li class="nav-item"><a class="nav-link active px-3" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="innovations.html">Innovations</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="about.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5 mb-4">
+      <div id="hero-box" class="p-5 bg-primary text-white rounded-3 shadow">
+        <div class="container-fluid py-5 text-center">
+          <h1 class="display-4 fw-bold text-uppercase mb-3">The World of Tomorrow</h1>
+          <p class="fs-4 fw-light mb-4">Discover how emerging technologies are reshaping the global landscape. Join us on a journey through the next era of human innovation.</p>
+          <button class="btn btn-outline-light btn-lg mt-2 fw-bold" type="button">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 pe-lg-5">
+          <h2 class="text-uppercase fw-bold text-primary mb-3">Innovation in Focus</h2>
+          <p class="lead mb-4">Leading the way into a digital future.</p>
+          <p>This future is built on responsive layouts that adapt to your needs, whether you are on a phone or a laptop.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="image/future-tech.jpg" class="img-fluid rounded shadow" alt="Future Tech Innovation">
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-4 pb-5">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="feature-card p-4 border bg-white h-100 rounded shadow-sm">
+            <h3 class="text-primary text-uppercase fw-bold mb-3">Vision</h3>
+            <p class="text-start mb-0">We aim to document the shift toward a more connected, efficient world.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-card p-4 border bg-white h-100 rounded shadow-sm">
+            <h3 class="text-primary text-uppercase fw-bold mb-3">Research</h3>
+            <p class="fst-italic mb-0">Our team analyzes trends in robotics, AI, and green energy sources.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-card p-4 border bg-white h-100 rounded shadow-sm">
+            <h3 class="text-primary text-uppercase fw-bold mb-3">Impact</h3>
+            <p class="fst-italic mb-0">Understanding how these changes affect our daily lives and careers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2026 Future Tech Project. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        console.log("jQuery is ready for index.html!");
+        $("#hero-box").hide().fadeIn(2000);
+      });
+    </script>
+  </body>
+</html>

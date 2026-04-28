@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Future Tech - About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="index.html">Future Tech</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-uppercase">
+            <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="innovations.html">Innovations</a></li>
+            <li class="nav-item"><a class="nav-link active px-3" href="about.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary text-uppercase">About the Project</h1>
+        <p class="lead text-muted">Meet the team behind the vision of tomorrow.</p>
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row text-center">
+        <div class="col-md-6 mb-4">
+          <div class="p-4 bg-white border rounded shadow-sm team-card">
+            <div class="rounded-circle bg-primary mx-auto mb-3" style="width: 80px; height: 80px;"></div>
+            <h4 class="fw-bold">Lead Developer</h4>
+            <p class="fw-bold">Sebastian Uva.</p>
+            <p class="text-muted">Specializing in Bootstrap Frameworks and UI design.</p>
+            <button class="btn btn-sm btn-outline-primary info-btn">View Bio</button>
+            <p class="mt-2 bio-text" style="display:none;">Bachelor of Information Systems student at Divine Word University passionate about creating responsive, accessible web experiences for the future.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="p-4 bg-white border rounded shadow-sm team-card">
+            <div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 80px; height: 80px;"></div>
+            <h4 class="fw-bold">Tech Researcher</h4>
+            <p class="fw-bold">Joseph Abaia.</p>
+            <p class="text-muted">Focused on AI trends and green energy impact.</p>
+            <button class="btn btn-sm btn-outline-primary info-btn">View Bio</button>
+            <p class="mt-2 bio-text" style="display:none;">Bachelor of Information Systems student at Divine Word University dedicated to documenting how technology can solve global environmental challenges.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2026 Future Tech Project. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".info-btn").click(function() {
+          $(this).next(".bio-text").slideToggle();
+          $(this).text($(this).text() === "View Bio" ? "Close Bio" : "View Bio");
+        });
+      });
+    </script>
+  </body>
+</html>

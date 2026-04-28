@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Future Tech - Innovations</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="index.html">FUTURE TECH</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-uppercase">
+            <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active px-3" href="innovations.html">Innovations</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="about.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+      <h2 class="text-center mb-5 text-primary fw-bold text-uppercase">Technological Advances</h2>
+      
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+          <img src="image/sebastian.jpg" 
+               class="img-fluid rounded shadow" 
+               id="tech-image"
+               alt="Cyber Security and AI">
+          <p class="text-muted text-center mt-3 fst-italic">Visualizing data-driven innovation</p>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card mb-4 border-0 shadow-sm innovation-card">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3 class="h4 text-success fw-bold mb-0">Artificial Intelligence</h3>
+                <span class="badge rounded-pill bg-warning text-dark uppercase">Trending</span>
+              </div>
+              <p class="card-text text-muted mb-0">AI is transforming industries by automating complex tasks and providing deep data insights.</p>
+            </div>
+          </div>
+          
+          <div class="card mb-4 border-0 shadow-sm innovation-card">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3 class="h4 text-success fw-bold mb-0">Quantum Computing</h3>
+                <span class="badge rounded-pill bg-info text-dark uppercase">High Impact</span>
+              </div>
+              <p class="card-text text-muted mb-0">Processing information at speeds impossible for classical computers, solving the world's toughest problems.</p>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <button id="highlight-btn" class="btn btn-success fw-bold text-uppercase px-4 shadow">Focus on Tech</button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5">
+
+      <div class="bg-white p-4 border rounded shadow-sm">
+        <h4 class="fw-bold text-primary">Bootstrap Research Findings</h4>
+        <p>As per the marking criteria, I have researched and implemented two additional Bootstrap classes not covered in class:</p>
+        <ul>
+          <li><strong>Cards (<code>.card</code>):</strong> Used to provide a structured, clean container for content that improves visual hierarchy.</li>
+          <li><strong>Badges (<code>.badge</code>):</strong> Used to add labels and status indicators to highlight important information quickly.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2026 Future Tech Project. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        console.log("Innovations page and jQuery are ready!");
+
+        // Interactive highlighting for research cards
+        $("#highlight-btn").click(function() {
+          $(".innovation-card").toggleClass("border-primary shadow-lg");
+          
+          if ($(this).text() === "Focus on Tech") {
+            $(this).text("Reset View").removeClass("btn-success").addClass("btn-primary");
+          } else {
+            $(this).text("Focus on Tech").removeClass("btn-primary").addClass("btn-success");
+          }
+        });
+
+        // Hover effect for design improvement
+        $("#tech-image").hover(
+          function() { $(this).css({"transform": "scale(1.02)", "transition": "0.3s"}); },
+          function() { $(this).css("transform", "scale(1)"); }
+        );
+      });
+    </script>
+  </body>
+</html>

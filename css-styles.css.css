@@ -1,0 +1,58 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* matches your bg-light class */
+    color: #333;
+}
+
+/* --- Navigation & Footer --- */
+.navbar-brand {
+    letter-spacing: 2px;
+}
+
+footer {
+    border-top: 1px solid #444;
+}
+
+/* --- Innovation Cards (Member 2 Research) --- */
+.innovation-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    background-color: #ffffff;
+}
+
+/* Custom styling for the Research Findings section */
+.bg-white.border.rounded.shadow-sm {
+    border-left: 5px solid #0d6efd !important; /* Adds a professional DWU blue accent */
+}
+
+/* --- Interactive Elements & Animations --- */
+
+/* Image Hover Effect (Handled by jQuery but enhanced by CSS) */
+#tech-image {
+    cursor: pointer;
+    border: 1px solid #dee2e6;
+}
+
+/* Hover lift effect for cards (General Design Improvement) */
+.innovation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Toggle Class used by jQuery for the "Focus on Tech" button */
+.border-primary.shadow-lg {
+    border: 2px solid #0d6efd !important;
+}
+
+/* --- Badges & Text (Text Utility Enhancements) --- */
+.badge.uppercase {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+/* Custom spacing for the horizontal rule */
+hr.my-5 {
+    border-top: 2px solid #dee2e6;
+    opacity: 0.5;
+}
